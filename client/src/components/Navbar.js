@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Navbar = () => {
   const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
@@ -16,14 +17,24 @@ export const Navbar = () => {
   const handleHanburgerClick = () => {
     setDisplayMobileMenu(!displayMobileMenu);
   };
+
+  const handleMobileMenuSelect = () => {
+    setDisplayMobileMenu(false);
+  };
+
   return (
     <div className="w-full h-[80px] flex justify-end items-center px-4 text-gray-50">
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li>Resume</li>
+        <li>
+          <AnchorLink href="#about">About</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#projects">Projects</AnchorLink>
+        </li>
+        <li>
+          <AnchorLink href="#contact">Contact</AnchorLink>
+        </li>
       </ul>
 
       <div
@@ -40,11 +51,25 @@ export const Navbar = () => {
             : "hidden"
         }
       >
-        <li className="py-6 text-4xl">Home</li>
+        <li className="py-6 text-4xl" onClick={() => handleMobileMenuSelect()}>
+          Resume
+        </li>
+        <li className="py-6 text-4xl" onClick={() => handleMobileMenuSelect()}>
+          <AnchorLink href="#about">About</AnchorLink>
+        </li>
+        <li className="py-6 text-4xl" onClick={() => handleMobileMenuSelect()}>
+          <AnchorLink href="#projects">Projects</AnchorLink>
+        </li>
+        <li className="py-6 text-4xl" onClick={() => handleMobileMenuSelect()}>
+          <AnchorLink href="#contact">Contact</AnchorLink>
+        </li>
+        {/* <li className="py-6 text-4xl" onClick={() => handleMobileMenuSelect()}>
+          Home
+        </li>
         <li className="py-6 text-4xl">About</li>
         <li className="py-6 text-4xl">Skills</li>
         <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">Contact</li> */}
       </ul>
       {/* <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>

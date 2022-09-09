@@ -14,18 +14,18 @@ function App() {
         <div className="sectionHeader">Skills</div>
         <Skills />
 
-        <div className="sectionHeader">Get to Know Me</div>
+        <div className="sectionHeader" id="about">
+          Get to Know Me
+        </div>
         <AboutMeBlurb />
 
-        <div className="sectionHeader">Projects</div>
+        <div className="sectionHeader" id="projects">
+          Projects
+        </div>
         <Project />
         <Project />
         <Project />
 
-        <div className="sectionHeader">Experience</div>
-        <Experience />
-        <Experience />
-        <Experience />
         <FooterContact />
       </div>
     </>

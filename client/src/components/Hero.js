@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Hero = () => {
   return (
@@ -16,11 +17,15 @@ export const Hero = () => {
           Javascript through the full stack
         </p>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 duration-300 hover:px-12">
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
+          <button className="text-white group border-2 px-6 py-3 my-2">
+            <AnchorLink href="#about">
+              <div className="flex items-center ">
+                About Me
+                <span>
+                  <HiArrowNarrowRight className="ml-3" />
+                </span>
+              </div>
+            </AnchorLink>
           </button>
         </div>
       </div>

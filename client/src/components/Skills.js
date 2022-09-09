@@ -6,8 +6,10 @@ export const Skills = () => {
         <div className="flex flex-col gap-2 w-[100%]">
           <div className="flex flex-col gap-5 p-5">
             <p>
-              Javascript &nbsp;|&nbsp; HTML &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Git
-              &nbsp;|&nbsp; Github &nbsp;|&nbsp; Linux
+              Javascript &nbsp;| Typescript &nbsp;|&nbsp; HTML5 &nbsp;|&nbsp;
+              CSS3 &nbsp;|&nbsp; Git &nbsp;|&nbsp; Github &nbsp;|&nbsp; Linux
+              |&nbsp; SQL |&nbsp; NOSQL |&nbsp; AWS (S3, CloudFront) |&nbsp;
+              Testing (Jest)
             </p>
           </div>
         </div>

@@ -3,7 +3,10 @@ import { IoHomeOutline, IoPhonePortraitSharp } from "react-icons/io5";
 export const FooterContact = () => {
   return (
     <>
-      <section className=" flex flex-col py-20 lg:py-[120px] w-full">
+      <section
+        className="flex flex-col py-20 lg:py-[120px] w-full"
+        id="contact"
+      >
         <div className="flex flex-col items-center border border-red-600">
           <h3
             className="
