@@ -12,4 +12,29 @@
     @apply px-4;
     @apply cursor-pointer;
   }
+
+  p {
+    @apply text-[#8892b0] text-lg
+  }
+
+  h1 {
+    @apply font-medium leading-tight text-4xl mt-0 mb-2 text-blue-600 text-[#ccd6f6];
+  }
+
+  h2 {
+    @apply font-bold leading-tight text-4xl mt-0 mb-2 text-blue-600 text-[#8892b0];
+  }
+
+  h3 {
+    @apply font-medium leading-tight text-3xl mt-0 mb-2 text-blue-600 text-[#8892b0];
+  }
+
+  h4 {
+    @apply font-medium leading-tight text-lg mt-0 mb-2 text-blue-600 text-[#8892b0];
+  }
+
+  .sectionHeader {
+    @apply underline font-medium leading-tight text-5xl mt-0 mb-2 text-blue-600 text-[#ccd6f6];
+
+  }
 }

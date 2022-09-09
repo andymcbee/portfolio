@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
 import {
   FaBars,
   FaTimes,
@@ -10,7 +9,6 @@ import {
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-//import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [displayMobileMenu, setDisplayMobileMenu] = useState(false);
@@ -19,10 +17,7 @@ export const Navbar = () => {
     setDisplayMobileMenu(!displayMobileMenu);
   };
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-50">
-      <div>
-        <img src={logo} alt="logo" style={{ width: "50px" }} />
-      </div>
+    <div className="w-full h-[80px] flex justify-end items-center px-4 text-gray-50">
       <ul className="hidden md:flex">
         <li>Home</li>
         <li>About</li>
@@ -51,7 +46,7 @@ export const Navbar = () => {
         <li className="py-6 text-4xl">Work</li>
         <li className="py-6 text-4xl">Contact</li>
       </ul>
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      {/* <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
@@ -86,7 +81,7 @@ export const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };
