@@ -54,7 +54,9 @@ export const FooterContact = () => {
             </div>
             <div className="w-full">
               <h4 className="font-bold text-dark text-xl mb-1">Phone Number</h4>
-              <p className="text-base text-body-color">(+62)81 414 257 9980</p>
+              <p className="text-base text-body-color">
+                <a href="tel:19053759197"> (905) 375-9197</a>
+              </p>
             </div>
           </div>
           <div className="flex mb-8 max-w-[370px] w-full">
@@ -89,7 +91,10 @@ export const FooterContact = () => {
               <h4 className="font-bold text-dark text-xl mb-1">
                 Email Address
               </h4>
-              <p className="text-base text-body-color">info@yourdomain.com</p>
+
+              <a href="mailto: armcburn@gmail.com">
+                <p className="text-base text-body-color">armcburn@gmail.com</p>
+              </a>
             </div>
           </div>
         </div>
@@ -134,7 +139,16 @@ export const FooterContact = () => {
             </div>
             <div className="w-full">
               <h4 className="font-bold text-dark text-xl mb-1">Github</h4>
-              <p className="text-base text-body-color">Github.com/profile</p>
+
+              <a
+                href="https://github.com/andymcbee"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-base text-body-color">
+                  https://github.com/andymcbee
+                </p>
+              </a>
             </div>
           </div>
           <div className="flex mb-8 max-w-[370px] w-full">
@@ -169,7 +183,16 @@ export const FooterContact = () => {
             </div>
             <div className="w-full">
               <h4 className="font-bold text-dark text-xl mb-1">Linkedin</h4>
-              <p className="text-base text-body-color">Linkedin.com/profile</p>
+
+              <a
+                href="https://www.linkedin.com/in/andrew-mcburney-seo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="text-base text-body-color">
+                  https://www.linkedin.com/in/andrew-mcburney-seo
+                </p>
+              </a>
             </div>
           </div>
           <div className="flex mb-8 max-w-[370px] w-full">
