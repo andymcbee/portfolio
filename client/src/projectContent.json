@@ -1,0 +1,59 @@
+
+ [
+   {
+      "id":1,
+      "title":"Lead Finder Pro",
+      "overview":["Lead Finder Pro is a sales enablement tool that a handful of people use (including Review Robin) to identify correct email addresses of decision makers at target companies. Typically, people use it to identify the email, and then will use that email in cold email outreach campaigns.","The app is written in Typescript across the full stack - and uses React on the front end, and NodeJS/Express on the backend. It also has a Postgres database and uses plain SQL on the backend without the use of any ORM.","With a full and secure user auth system, people can sign up and manage their own campaigns as if it were a typical Software as a Service. I used JWT as an auth method and keep track of JWT validity with a simple middleware that sits on top of any protected backend routes.", "The biggest challenge was developing the algorithm to identify correct email addresses on the backend. It uses an API that checks for an active SMTP connection, so I ended up testing various emails to identify the most common patterns (Eg. firstName@domain.com, fName.lastName@domain.com, etc.) and then checked them in that order to consume the least amount of credits possible. I also made it so that when it finds a positive email, it stops. This algorithm helps to consume 80% less API credits than the initial MVP which simply brute forced the top 5 variations, regardless if a positive hit was found."],
+      "techstackFrontend":"",
+      "techstackBackend":"",
+      "featureHighlights":"",
+      "blogPosts":"",
+      "liveLink":"",
+      "githubLink":"https://github.com/andymcbee/lead-finder-ts"
+      
+   },
+   {
+      "id":2,
+      "title":"Ontario Trails App",
+      "overview":["Ontario Trails App is a simple directory-style app meant to offer a simple way to find trails by either name or location. The data was scraped from outdoors-related Point of Interests on Google Maps and is stored in an SQL database - but ultimately is hosted in static form with no backend. I utilized NextJS’ server side rendering to create dynamic search engine friendly pages at scale - then exported it all with NextJS’ export static side feature. When the app is hosted, it lives on AWS CloudFront which serves the static HTML - and allows blazing fast speed from the combination of being served over a CDN and also in pure static HTML form.","The biggest technical challenges of this project were wrangling the data, and getting it into a form that the NodeJS backend could manage. I ended up building out some basic data processing features, and stored the data in JSON - which is then processed by NextJS’s Server Side Rendering to produce each page. I created a bulk upload feature within NodeJS, and then I can also edit single listings as needed by utilizing the open source Strapi content management system that sits on top of the SQL database locally.","This makes the project very easy to scale (in terms of number of directory listings) while also keeping it very easy to update. Updating the site is as simple as exporting the HTML directory with NextJS and then re-uploading it to the AWS S3 bucket that CloudFront is hooked into."],
+      "techstackFrontend":"",
+      "techstackBackend":"",
+      "featureHighlights":"",
+      "blogPosts":"",
+      "liveLink":"",
+      "githubLink":"https://github.com/andymcbee/ontario-trails-app"
+      
+   },
+   {
+      "id":3,
+      "title":"Simple Events Feed",
+      "overview":["Ontario Trails App is a simple directory-style app meant to offer a simple way to find trails by either name or location. The data was scraped from outdoors-related Point of Interests on Google Maps and is stored in an SQL database - but ultimately is hosted in static form with no backend. I utilized NextJS’ server side rendering to create dynamic search engine friendly pages at scale - then exported it all with NextJS’ export static side feature. When the app is hosted, it lives on AWS CloudFront which serves the static HTML - and allows blazing fast speed from the combination of being served over a CDN and also in pure static HTML form.","The biggest technical challenges of this project were wrangling the data, and getting it into a form that the NodeJS backend could manage. I ended up building out some basic data processing features, and stored the data in JSON - which is then processed by NextJS’s Server Side Rendering to produce each page. I created a bulk upload feature within NodeJS, and then I can also edit single listings as needed by utilizing the open source Strapi content management system that sits on top of the SQL database locally.","This makes the project very easy to scale (in terms of number of directory listings) while also keeping it very easy to update. Updating the site is as simple as exporting the HTML directory with NextJS and then re-uploading it to the AWS S3 bucket that CloudFront is hooked into."],
+      "techstackFrontend":"",
+      "techstackBackend":"",
+      "featureHighlights":"",
+      "blogPosts":"",
+      "liveLink":"",
+      "githubLink":"https://github.com/andymcbee/simple-events-feed"
+      
+   },
+   {
+      "id":4,
+      "title":"Realtime CSV Updater",
+      "overview":["This “minimum viable product” was designed as a band-aid solution for an AgriTech marketplace startup. They have a marketplace platform where users can buy and sell goods - and they also advertise products on media sites such as Facebook.","Their problem was that if something sold on their platform, it would continue to be advertised on their media sites until they manually updated it by re-uploading latest changes in buy/sold status.","This was designed to show them the concept of using a middleware to speak to each platform (their own, plus any site they advertise on) so that their buy/sold status can be updated in realtime.","How it works is simple: The media sites read directly from the CSV response to see what’s currently available, and the ArgiTech marketplace platform sends a Post request to the “update” endpoint every time anything is sold - which updates the status to “sold”.","One interesting technical aspect of this was that I developed a simple API key system to allow them to gain access to the system. They can also re-roll their API keys if it becomes compromised. Other than that, this app isn’t very interesting technically speaking - but it does demonstrate my ability to identify real world business problems and develop technical solutions.","This was a test or “minimum viable product” to see if it would work before they developed anything in-house, which is why the code was put together so fast. The app itself is a simple Node/Express server with two endpoints."
+   ],
+      "techstackFrontend":"",
+      "techstackBackend":"",
+      "featureHighlights":"",
+      "blogPosts":"",
+      "liveLink":"",
+      "githubLink":"https://github.com/andymcbee/realtime-csv-updater"
+      
+   }
+]
+
+
+
+
+
+
+

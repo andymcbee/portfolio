@@ -40,7 +40,7 @@ export const FooterContact = () => {
               rounded
               "
             >
-              <IoPhonePortraitOutline size={30} />
+              <IoPhonePortraitOutline color="#8892b0" size={30} />
               {/*  <svg
                 width="24"
                 height="26"
@@ -75,7 +75,7 @@ export const FooterContact = () => {
                      rounded
                      "
             >
-              <IoMailOutline size={30} />
+              <IoMailOutline color="#8892b0" size={30} />
               {/* <svg
                 width="28"
                 height="19"
@@ -122,7 +122,7 @@ export const FooterContact = () => {
                      rounded
                      "
             >
-              <IoLogoGithub size={30} />
+              <IoLogoGithub color="#8892b0" size={30} />
               {/* <svg
                 width="24"
                 height="24"
@@ -155,7 +155,7 @@ export const FooterContact = () => {
                      rounded
                      "
             >
-              <IoLogoLinkedin size={30} />
+              <IoLogoLinkedin color="#8892b0" size={30} />
               {/* <svg
                 width="24"
                 height="26"
@@ -190,7 +190,7 @@ export const FooterContact = () => {
                      rounded
                      "
             >
-              <IoGlobeOutline size={30} />
+              <IoGlobeOutline color="#8892b0" size={30} />
               {/* <svg
                 width="28"
                 height="19"

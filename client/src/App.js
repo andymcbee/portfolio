@@ -5,6 +5,8 @@ import { Project } from "./components/Project";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
 import { FooterContact } from "./components/FooterContact";
+import projectsData from "./projectContent.json";
+
 function App() {
   return (
     <>
@@ -22,10 +24,9 @@ function App() {
         <div className="sectionHeader" id="projects">
           Projects
         </div>
-        <Project />
-        <Project />
-        <Project />
-
+        {projectsData.map((project) => {
+          return <Project key={project.id} data={project} />;
+        })}
         <FooterContact />
       </div>
     </>
